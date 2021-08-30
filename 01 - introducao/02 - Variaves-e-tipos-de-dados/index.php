@@ -78,17 +78,13 @@ CriarTitulo("Tipo callback", __LINE__);
   $code = "<article><h3>Chamada de callback - Call User Function</h3></article>";
   $codeClear = call_user_func("strip_tags", $code);
 
+  var_dump($code, $codeClear);
+
   $codeMore = function ($code) {
     var_dump($code);
   };
 
-  $exibirIdade = function ($anoNascimento){
-    echo "<h3 class='tag'>" . 2021 - $anoNascimento . "</h3>";
-  };
-
   $codeMore("PHP é muito bom :D");
-
-  $exibirIdade(1998);
 
 /**
 * [ outros tipos ] string | array | objeto | numérico | null
